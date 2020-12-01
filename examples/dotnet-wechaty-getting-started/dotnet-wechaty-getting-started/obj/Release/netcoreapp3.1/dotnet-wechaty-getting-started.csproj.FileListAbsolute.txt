@@ -1,0 +1,4 @@
+D:\localhost\coding\github\wechaty\dotnet\dotnet-wechaty-getting-started\examples\dotnet-wechaty-getting-started\dotnet-wechaty-getting-started\obj\Release\netcoreapp3.1\dotnet-wechaty-getting-started.csprojAssemblyReference.cache
+D:\localhost\coding\github\wechaty\dotnet\dotnet-wechaty-getting-started\examples\dotnet-wechaty-getting-started\dotnet-wechaty-getting-started\obj\Release\netcoreapp3.1\dotnet-wechaty-getting-started.AssemblyInfoInputs.cache
+D:\localhost\coding\github\wechaty\dotnet\dotnet-wechaty-getting-started\examples\dotnet-wechaty-getting-started\dotnet-wechaty-getting-started\obj\Release\netcoreapp3.1\dotnet-wechaty-getting-started.AssemblyInfo.cs
+D:\localhost\coding\github\wechaty\dotnet\dotnet-wechaty-getting-started\examples\dotnet-wechaty-getting-started\dotnet-wechaty-getting-started\obj\Release\netcoreapp3.1\dotnet-wechaty-getting-started.csproj.CoreCompileInputs.cache

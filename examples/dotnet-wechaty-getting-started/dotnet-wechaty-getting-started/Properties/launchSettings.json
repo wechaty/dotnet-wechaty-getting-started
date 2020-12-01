@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "dotnet-wechaty-getting-started": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "restore": {
+    "H:\\git\\github\\wechaty\\c#-master\\dotnet-wechaty-getting-started\\examples\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started.csproj": {}
+  },
+  "projects": {
+    "H:\\git\\github\\wechaty\\c#-master\\dotnet-wechaty-getting-started\\examples\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\git\\github\\wechaty\\c#-master\\dotnet-wechaty-getting-started\\examples\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started.csproj",
+        "projectName": "dotnet-wechaty-getting-started",
+        "projectPath": "H:\\git\\github\\wechaty\\c#-master\\dotnet-wechaty-getting-started\\examples\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "H:\\git\\github\\wechaty\\c#-master\\dotnet-wechaty-getting-started\\examples\\dotnet-wechaty-getting-started\\dotnet-wechaty-getting-started\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://mirrors.cloud.tencent.com/nuget/": {},
+          "https://www.myget.org/F/abp-nightly/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Wechaty": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Wechaty.Common": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Wechaty.EventEmitter": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Wechaty.FileBox": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Wechaty.MemoryCard": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Wechaty.Puppet": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Wechaty.Puppet.Hostie": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Wechaty.ReactiveQueue": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Wechaty.Watchdog": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

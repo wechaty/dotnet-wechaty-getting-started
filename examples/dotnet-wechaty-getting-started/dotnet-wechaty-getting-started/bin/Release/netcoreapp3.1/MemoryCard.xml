@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MemoryCard</name>
+    </assembly>
+    <members>
+        <member name="M:Wechaty.MemoryCard.IsMultiplexKey(System.String)">
+            <summary>
+            Multiplexing related functions START
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
