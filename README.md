@@ -2,7 +2,40 @@
 
 ![Dotnet Wechaty](https://raw.githubusercontent.com/wechaty/dotnet-wechaty/master/docs/images/dotnet-wechaty.png)
 
-##  Wechaty Home
+## Quick Start
+
+
+1、Clone dotnet-wechaty-getting-started repository
+```
+git clone https://github.com/wechaty/dotnet-wechaty-getting-started.git
+cd  dotnet-wechaty-getting-started
+```
+
+2、install Nuget Package
+```
+nuget restore 
+```
+
+3、Set token for your bot 
+open `appsettings.json` set wechaty configuration 
+
+```
+  "Wechaty_Name": "Demo",
+  "Wechaty_Puppet_providers": "wechaty-puppet-rock",
+  "Wechaty_Token": "",
+  "Wechaty_EndPoint": "114.215.83.32:7777"
+```
+
+> if your token is rock token ,the Wechaty_Puppet_providers must be 'wechaty-puppet-rock',if token is donut can empty or 'wechaty-puppet-dount'
+
+4、Run the  bot
+```
+visual studio  F5 
+# or
+dotnet run
+```
+
+##  Wechaty Getting Started in Multiple Languages
 
 <https://wechaty.github.io>
 
