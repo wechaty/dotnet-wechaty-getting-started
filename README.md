@@ -20,10 +20,10 @@ nuget restore
 open `appsettings.json` set wechaty configuration 
 
 ```
-  "Wechaty_Name": "Demo",
-  "Wechaty_Puppet_providers": "wechaty-puppet-rock",
+  "Wechaty_Name": "",
+  "Wechaty_Puppet_providers": "",
   "Wechaty_Token": "",
-  "Wechaty_EndPoint": "114.215.83.32:7777"
+  "Wechaty_EndPoint": ""
 ```
 
 > if your token is rock token ,the Wechaty_Puppet_providers must be 'wechaty-puppet-rock',if token is donut can empty or 'wechaty-puppet-dount'
