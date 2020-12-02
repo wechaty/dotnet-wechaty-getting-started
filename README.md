@@ -35,6 +35,26 @@ visual studio  F5
 dotnet run
 ```
 
+### Docker 
+
+
+1、docker pull
+```
+docker pull  richpeople/dotnet-wechaty:0.1.1
+```
+
+2、docker  run
+```
+docker run -ti  --name dotnet-wechaty \ 
+-e Wechaty_Name="" \
+-e Wechaty_Puppet_providers="" \
+-e Wechaty_Token="" \
+-e Wechaty_EndPoint="" \
+-e TZ="Asia/Shanghai" \
+richpeople/dotnet-wechaty:0.1.1
+```
+
+
 ##  Wechaty Getting Started in Multiple Languages
 
 <https://wechaty.github.io>
@@ -45,8 +65,7 @@ dotnet run
 [![Wechaty in Scala](https://img.shields.io/badge/Wechaty-Scala-890)](https://github.com/wechaty/scala-wechaty)
 [![Wechaty in PHP](https://img.shields.io/badge/Wechaty-PHP-99c)](https://github.com/wechaty/php-wechaty)
 [![Wechaty in .NET(C#)](https://img.shields.io/badge/Wechaty-.NET-629)](https://github.com/wechaty/dotnet-wechaty)
-
-- [TypeScript Wechaty Getting Started](https://github.com/wechaty/wechaty-getting-started)
+etting-started)
 - [Python Wechaty Getting Started](https://github.com/wechaty/python-wechaty-getting-started)
 - [Go Wechaty Getting Started](https://github.com/wechaty/go-wechaty-getting-started)
 - [Java Wechaty Getting Started](https://github.com/wechaty/java-wechaty-getting-started)
@@ -65,3 +84,5 @@ dotnet run
 - Code & Docs © 2018-now Huan and Wechaty Community Contributors (<https://github.com/wechaty>)
 - Code released under the Apache-2.0 License
 - Docs released under Creative Commons
+
+- [TypeScript Wechaty Getting Started](https://github.com/wechaty/wechaty-g
