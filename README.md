@@ -20,13 +20,10 @@ nuget restore
 open `appsettings.json` set wechaty configuration 
 
 ```
-  "Wechaty_Name": "",
-  "Wechaty_Puppet_providers": "",
-  "Wechaty_Token": "",
-  "Wechaty_EndPoint": ""
+  "WECHATY_PUPPET": "wechaty-puppet-hostie",
+  "WECHATY_PUPPET_HOSTIE_TOKEN": "",
 ```
 
-> if your token is rock token ,the Wechaty_Puppet_providers must be 'wechaty-puppet-rock',if token is donut can empty or 'wechaty-puppet-dount'
 
 4、Run the  bot
 ```
@@ -40,18 +37,16 @@ dotnet run
 
 1、docker pull
 ```
-docker pull  richpeople/dotnet-wechaty:0.1.1
+docker pull  richpeople/dotnet-wechaty
 ```
 
 2、docker  run
 ```
 docker run -ti  --name dotnet-wechaty \ 
--e Wechaty_Name="" \
--e Wechaty_Puppet_providers="" \
--e Wechaty_Token="" \
--e Wechaty_EndPoint="" \
+-e WECHATY_PUPPET="wechaty-puppet-hostie" \
+-e WECHATY_PUPPET_HOSTIE_TOKEN="" \
 -e TZ="Asia/Shanghai" \
-richpeople/dotnet-wechaty:0.1.1
+richpeople/dotnet-wechaty
 ```
 
 
@@ -84,5 +79,3 @@ richpeople/dotnet-wechaty:0.1.1
 - Code & Docs © 2018-now Huan and Wechaty Community Contributors (<https://github.com/wechaty>)
 - Code released under the Apache-2.0 License
 - Docs released under Creative Commons
-
-- [TypeScript Wechaty Getting Started](https://github.com/wechaty/wechaty-g
