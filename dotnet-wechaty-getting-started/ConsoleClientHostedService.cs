@@ -25,12 +25,10 @@ namespace dotnet_wechaty_getting_started
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
-            var PuppetOptions = new Wechaty.Schemas.PuppetOptions()
+            var PuppetOptions = new PuppetOptions()
             {
-                Name = _configuration["Wechaty_Name"],
-                Endpoint = _configuration["Wechaty_EndPoint"],
-                Token = _configuration["Wechaty_Token"],
-                PuppetProvider = _configuration["Wechaty_Puppet_providers"] == string.Empty ? "wechaty-puppet-dount" : "wechaty-puppet-rock"
+                Token = _configuration["WECHATY_PUPPET_HOSTIE_TOKEN"],
+                PuppetService = _configuration["WECHATY_PUPPET"]
             };
             bot = new Wechaty.Wechaty(PuppetOptions);
 
