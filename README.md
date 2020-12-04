@@ -42,11 +42,21 @@ docker pull  richpeople/dotnet-wechaty
 
 2、docker  run
 ```
-docker run -ti  --name dotnet-wechaty \ 
--e WECHATY_PUPPET="wechaty-puppet-hostie" \
--e WECHATY_PUPPET_HOSTIE_TOKEN="" \
--e TZ="Asia/Shanghai" \
-richpeople/dotnet-wechaty
+docker run \
+ --name dotnet-wechaty \
+ -e WECHATY_PUPPET="wechaty-puppet-hostie" \
+ -e WECHATY_PUPPET_HOSTIE_TOKEN="" \
+ -e TZ="Asia/Shanghai" \
+ -d richpeople/dotnet-wechaty
+```
+
+3、docker ps  
+Use `docker ps` command to see if  container 'dotnet-wechaty' is running
+
+4、docker logs
+`docker logs` command to see the container logs
+```
+docker logs -f  --tail 100 dotnet-wechaty
 ```
 
 
