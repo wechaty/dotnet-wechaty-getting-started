@@ -5,7 +5,7 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using Wechaty.Schemas;
+using Wechaty.Module.Puppet.Schemas;
 using Wechaty.User;
 
 
@@ -41,7 +41,7 @@ namespace dotnet_wechaty_getting_started
 
         public static void WechatyLoginEventListener(ContactSelf user)
         {
-            Console.WriteLine($"{user.Id}在{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}上线了！");
+            Console.WriteLine($"{user.Name}在{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}上线了！");
         }
 
         private static void WechatyHeartbeatEventListener(object data)
