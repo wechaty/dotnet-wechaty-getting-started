@@ -28,7 +28,8 @@ namespace dotnet_wechaty_getting_started
             var PuppetOptions = new PuppetOptions()
             {
                 Token = _configuration["WECHATY_PUPPET_HOSTIE_TOKEN"],
-                PuppetService = _configuration["WECHATY_PUPPET"]
+                //PuppetService = _configuration["WECHATY_PUPPET"]
+                Endpoint= _configuration["WECHATY_ENDPOINT"]
             };
             bot = new Wechaty.Wechaty(PuppetOptions);
 
