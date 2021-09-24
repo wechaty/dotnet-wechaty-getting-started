@@ -4,7 +4,56 @@
 
 ## Quick Start
 
+###   Start Wechaty  Gateway
 
+1、 Wechaty Gateway  HTTP protocol
+
+```
+export WECHATY_LOG="verbose"
+export WECHATY_PUPPET="wechaty-puppet-padlocal"
+export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_XXXX"
+export WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT=true
+export WECHATY_PUPPET_SERVER_PORT="9002"
+export WECHATY_TOKEN="set your gateway token"
+
+docker run -it \
+  --name wechaty-gateway-http \
+  -e WECHATY_LOG \
+  -e WECHATY_PUPPET \
+  -e WECHATY_PUPPET_PADLOCAL_TOKEN \
+  -e WECHATY_PUPPET_SERVER_PORT \
+  -e WECHATY_TOKEN \
+  -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" \
+  wechaty/wechaty:0.56
+```
+
+
+2、Wechaty Gateway  HTTPS protocol
+
+```
+export WECHATY_LOG="verbose"
+export WECHATY_PUPPET="wechaty-puppet-padlocal"
+export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_XXXX"
+export WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT=true
+export WECHATY_PUPPET_SERVER_PORT="9001"
+export WECHATY_TOKEN="set your gateway token"
+
+docker run -it \
+  --name wechaty-gateway-xian-no-ssl \
+  --network=public \
+  -e WECHATY_LOG \
+  -e WECHATY_PUPPET \
+  -e WECHATY_PUPPET_PADLOCAL_TOKEN \
+  -e WECHATY_PUPPET_SERVER_PORT \
+  -e WECHATY_TOKEN \
+  -e WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT \
+  -p "$WECHATY_PUPPET_SERVER_PORT:$WECHATY_PUPPET_SERVER_PORT" \
+  wechaty/wechaty
+```
+
+
+
+### Start .NET Wechaty Client
 1、Clone dotnet-wechaty-getting-started repository
 ```
 git clone https://github.com/wechaty/dotnet-wechaty-getting-started.git
@@ -20,9 +69,12 @@ nuget restore
 open `appsettings.json` set wechaty configuration 
 
 ```
-  "WECHATY_PUPPET": "wechaty-puppet-hostie",
+  // eg：http://localhost:9002  https://localhost:9002 
+
   "WECHATY_PUPPET_HOSTIE_TOKEN": "",
+  "WECHATY_ENDPOINT": "",
 ```
+ If you are using the HTTP protocol, use https://127.0.0.1:9001
 
 
 4、Run the  bot
@@ -32,32 +84,7 @@ visual studio  F5
 dotnet run
 ```
 
-### Docker 
 
-
-1、docker pull
-```
-docker pull  richpeople/dotnet-wechaty
-```
-
-2、docker  run
-```
-docker run \
- --name dotnet-wechaty \
- -e WECHATY_PUPPET="wechaty-puppet-hostie" \
- -e WECHATY_PUPPET_HOSTIE_TOKEN="" \
- -e TZ="Asia/Shanghai" \
- -d richpeople/dotnet-wechaty
-```
-
-3、docker ps  
-Use `docker ps` command to see if  container 'dotnet-wechaty' is running
-
-4、docker logs
-`docker logs` command to see the container logs
-```
-docker logs -f  --tail 100 dotnet-wechaty
-```
 
 
 ##  Wechaty Getting Started in Multiple Languages
