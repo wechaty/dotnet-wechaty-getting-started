@@ -12,7 +12,6 @@
 export WECHATY_LOG="verbose"
 export WECHATY_PUPPET="wechaty-puppet-padlocal"
 export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_XXXX"
-export WECHATY_PUPPET_SERVICE_NO_SSL_UNSAFE_CLIENT=true
 export WECHATY_PUPPET_SERVER_PORT="9002"
 export WECHATY_TOKEN="set your gateway token"
 
